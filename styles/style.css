@@ -67,7 +67,7 @@ header {
    .text-container  {
       position: absolute;
       top: 30%;
-      left: 28%;
+      left: 25%;
    }
 
    .text-container h3 {
@@ -88,7 +88,7 @@ header {
 
 h4 {
    color: var(--blood-orange);
-   font-size: 4em;
+   font-size: 2em;
    padding-top: 2em;
    text-align: center;
    font-weight: normal;
@@ -97,20 +97,41 @@ h4 {
 
 .flex-wrapper-intro{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
-
 }
 
 .flex-wrapper-intro p {
+   font-size: 1em;
    padding-top: 3em;
-   width: 500px;
-   padding-left: 2em;
+   padding-left: 1em;
 }
 
 .flex-wrapper-intro span {
    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+   h4{
+      font-size: 4em;
+      padding-top: 2em;
+      text-align: center;
+      font-weight: normal;
+   }
+
+   .flex-wrapper-intro{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .flex-wrapper-intro p {
+      padding-top: 3em;
+      width: 500px;
+      padding-left: 2em;
+   }
 }
 
 /*VIDEO SECTION*/
