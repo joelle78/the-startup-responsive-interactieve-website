@@ -1,3 +1,4 @@
+// Banner
 var myIndex = 0;
 carousel();
 
@@ -12,3 +13,22 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 3000); // Change image every 2 seconds
 }
+
+// Reveal in function intro text
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);

@@ -134,31 +134,30 @@ h4 {
    }
 }
 
+.reveal{
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: 2s all ease;
+}
+.reveal.active{
+   transform: translateY(0);
+   opacity: 1;
+}
+
 /*VIDEO SECTION*/
 .video-section {
    display: flex;
    flex-direction: row;
-   padding-top: 3em;
-   justify-content: center;
-   align-items: center;
+
 }
 
-.video-section img {
-   padding-top: 3em;
-   width: 50em;
-}
+
 
 /* JOB DESCRIPTION */
 
 
 
-/*.intro-par-container{*/
-/*   width: 40em;*/
-/*   text-align: left;*/
-/*}*/
-/*.intro-par-container p {*/
-/*   padding-top: 1em;*/
-/*   text-align: left;*/
-/*}*/
+
 
 
