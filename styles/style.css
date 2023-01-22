@@ -25,7 +25,15 @@ header {
 .w3-content{
    position: relative;
    width: 100%;
-   height: 70vh;
+   height: 50vh;
+}
+
+@media (min-width: 600px) {
+   .w3-content {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+   }
 }
 
 .mySlides {
@@ -38,8 +46,7 @@ header {
 
 .text-container  {
    position: absolute;
-   top: 35%;
-   left: 10%;
+   top: 20%;
 }
 
 .text-container h3 {
@@ -56,7 +63,7 @@ header {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 45rem){
+@media (min-width: 640px){
    .text-container  {
       position: absolute;
       top: 30%;
