@@ -105,7 +105,7 @@ h4 {
 .flex-wrapper-intro p {
    font-size: 1em;
    padding-top: 3em;
-   padding-left: 1em;
+   padding-left: 0.5em;
 }
 
 .flex-wrapper-intro span {
@@ -175,7 +175,7 @@ h4 {
       justify-content: center;
       align-items: center;
    }
-   
+
    .video-section img {
       padding-top: 2em;
       width: 50em;
