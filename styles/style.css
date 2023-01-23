@@ -211,11 +211,16 @@ h4 {
 }
 
 /* JOB DESCRIPTION */
+
+
+
+
 .flex-container-job-description{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   z-index: 9;
 
 }
 
