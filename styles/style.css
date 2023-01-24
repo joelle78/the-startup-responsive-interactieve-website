@@ -40,18 +40,18 @@ header {
 .mySlides {
    position: absolute;
    width: 100%;
-   height: 100%;
+   height: 90%;
    object-fit: cover;
    opacity: 80%;
 }
 
 .text-container  {
    position: absolute;
-   top: 30.50%;
-   background: rgba(0, 0, 0, .2);
+   top: 25%;
+   /*background: rgba(0, 0, 0, .2);*/
    width: 23.4em;
-   height: 8em;
-   padding-top: 2em;
+
+   /*padding-top: 2em;*/
 
 
 }
@@ -75,11 +75,11 @@ header {
 @media (min-width: 640px){
    .text-container  {
       position: absolute;
-      background: rgba(0, 0, 0, .2);
-      top: 41.5%;
+      /*background: rgba(0, 0, 0, .2);*/
+      top: 25%;
       left: 22%;
       width: 58em;
-      height: 15em;
+
       /*border-radius: 10px 10px 0px 0px;*/
    }
 
@@ -153,7 +153,7 @@ h4 {
    opacity: 1;
 }
 
-/* LINKS NAAR RECHTS*/
+/* LINKS NAAR RECHTS */
 .reveal3{
    position: relative;
    transform: translateX(-150px);
@@ -188,7 +188,7 @@ h4 {
    }
 }
 
-/*VIDEO SECTION*/
+/* VIDEO SECTION*/
 .video-section {
    display: flex;
    flex-direction: row;
@@ -224,7 +224,7 @@ h4 {
    }
 }
 
-/* JOB DESCRIPTION */
+/* SECTION JOB DESCRIPTION */
 
 
 
@@ -275,7 +275,7 @@ h4 {
 
 
 @media (min-width: 640px) {
-   .flex-container-job-description{
+   .flex-container-job-description {
       display: flex;
       flex-direction: row-reverse;
       margin-top: 10em;
@@ -292,14 +292,14 @@ h4 {
 
    }
 
-   .flex-wrapper-job-description-2{
+   .flex-wrapper-job-description-2 {
       padding-left: 5em;
       padding-bottom: 2em;
 
    }
 
    .flex-wrapper-job-description-2 h6 {
-      font-size: 2em;
+      font-size: 2.5em;
       color: var(--blood-orange);
       font-weight: normal;
       padding-right: 2.4em;
@@ -308,40 +308,55 @@ h4 {
 
    .flex-wrapper-job-description-2 p {
       padding-top: 2em;
-      width: 500px;
+      width: 600px;
       text-align: left;
       font-size: 1em;
+   }
+}
+
+   /* SECTION WHAT WE THINK IS IMPORTANT*/
+.flex-wrapper-important {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20em;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+
+
+.flex-wrapper-important-text {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+   .flex-wrapper-important li span {
+      color: black;
+   }
+
+   .flex-wrapper-important li {
+      font-size: 1em;
+      margin: 10px;
+      width: 330px;
+      color: var(--blood-orange);
+   }
+
+   .flex-wrapper-important-text h7 {
+      font-size: 3em;
+
    }
 
 
 
-   /*.flex-wrapper-job-description-2 h6 {*/
-   /*   font-size: 1.5em;*/
-   /*   font-weight: normal;*/
-   /*   text-align: left;*/
-
-   /*}*/
-
-   /*.flex-wrapper-job-description-2 ul {*/
-   /*   padding-top: 1em;*/
-   /*   text-align: left;*/
-   /*   padding-left: 1em;*/
-
-   /*}*/
-
-   /*li span {*/
-   /*   color: black;*/
-   /*}*/
-
-   /*li {*/
-   /*   margin: 10px;*/
-   /*   padding-left: 1em;*/
-   /*   width: 330px;*/
-   /*   color: var(--blood-orange);*/
-   /*}*/
 
 
-}
+
+
+
+
 
 
 
