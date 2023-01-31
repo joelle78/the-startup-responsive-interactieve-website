@@ -1,18 +1,65 @@
-// Banner
-var myIndex = 0;
-carousel();
+//Cube 19 senior brand designers
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube19').style.animation = "slideIn 2s forwards";
+    });
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
-}
+//Cube 16 senior UX designers
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube16').style.animation = "slideIn-2 2s forwards";
+        document.getElementById('buildCube16').style.animationDelay = "1s";
+    });
+
+//Cube 13 developers
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube13').style.animation = "slideIn-3 2s forwards";
+        document.getElementById('buildCube13').style.animationDelay = "1.8s";
+    });
+
+//Cube 10 UX'ers
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube10').style.animation = "slideIn-4 2s forwards";
+        document.getElementById('buildCube10').style.animationDelay = "2.6s";
+    });
+
+//Cube 7 junior designer
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube7').style.animation = "slideIn-5 2s forwards";
+        document.getElementById('buildCube7').style.animationDelay = "3.2s";
+    });
+
+//Cube 4 open application
+document.getElementById('build-button').addEventListener("click",
+    function () {
+        document.getElementById('buildCube4').style.animation = "slideIn-6 2s forwards";
+        document.getElementById('buildCube4').style.animationDelay = "4s";
+    });
+
+
+// navbar
+window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });
+
+});
 
 // Reveal in function intro text (onder naar boven)
 function reveal() {
@@ -70,6 +117,3 @@ function reveal3() {
 }
 
 window.addEventListener("scroll", reveal3);
-
-
-
